@@ -1,4 +1,4 @@
-#EzCut
+# EzCut
 
 ### Features
 
@@ -7,7 +7,7 @@ EzCut is a Spring framework web application using Angular meant to demonstrate b
 - **Backend:** Spring Boot, Spring Security, MySQL
 - **Front End:** HTML, CSS, Bootstrap, Angular with Typescript
 
-####Instructions for use:
+#### Instructions for use:
 To use and install EzCut, simply:
 1. Extract the application
 2. Create a MySQL database named ezcut_db
@@ -20,6 +20,6 @@ To use and install EzCut, simply:
 9. Run ng serve -o
 10. Done! :)
 
-###Relational Database
+### Relational Database
 [![asfd](asdf "asfd")](https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg "asfd")[![https://raw.githubusercontent.com/HadiAli08/EzCut/main/Relational%20Database.png](https://raw.githubusercontent.com/HadiAli08/EzCut/main/Relational%20Database.png "https://raw.githubusercontent.com/HadiAli08/EzCut/main/Relational%20Database.png")](https://raw.githubusercontent.com/HadiAli08/EzCut/main/Relational%20Database.png "https://raw.githubusercontent.com/HadiAli08/EzCut/main/Relational%20Database.png")
 

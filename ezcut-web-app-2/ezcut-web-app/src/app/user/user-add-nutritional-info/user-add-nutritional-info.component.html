@@ -1,0 +1,69 @@
+<app-user-navbar></app-user-navbar>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="wrapper fadeInDown">
+    <h1 class="cotainer text-center">Add Nutritional Info</h1>
+    <div class="container">
+        <form class="row g-3" (ngSubmit)="AddNutritionalInfo()">
+            <div class="col-md-6">
+              <label for="first_Name" class="form-label"> Name</label>
+              <input type="text" class="form-control" id="first_Name" name="first_Name" [(ngModel)]="nutritional.name">
+            </div>
+            <div class="col-md-6">
+              <label for="last_Name" class="form-label">Serving Quantity</label>
+              <input type="text" class="form-control" id="last_Name" name="last_Name" [(ngModel)]="nutritional.serving_quantity">
+            </div>
+            <div class="col-md-6">
+                <label for="user_Name" class="form-label">Serving Unit</label>
+                <input type="text" class="form-control" id="user_Name" name="user_Name" [(ngModel)]="nutritional.serving_unit">
+              </div>
+              <div class="col-md-6">
+                <label for="user_Email" class="form-label">Serving Weight</label>
+                <input type="email" class="form-control" id="user_Email" name="user_Email" [(ngModel)]="nutritional.serving_weight">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Calories</label>
+                <input type="text" class="form-control" id="inputPassword4" name="user_Password" [(ngModel)]="nutritional.calories">
+              </div>
+              <div class="col-md-6">
+                <label for="bmi" class="form-label">Total Fat</label>
+                <input type="text" class="form-control" id="bmi" name="bmi" [(ngModel)]="nutritional.total_fat">
+              </div>
+              <div class="col-md-6">
+                <label for="currentWeight" class="form-label">Sodium</label>
+                <input type="text" class="form-control" id="currentWeight" name="sodium" [(ngModel)]="nutritional.sodium">
+              </div>
+              <div class="col-md-6">
+                <label for="dailyPoints" class="form-label">Total Carbs</label>
+                <input type="text" class="form-control" id="dailyPoints" name="total_carbs" [(ngModel)]="nutritional.total_carbs">
+              </div>
+              <div class="col-md-6">
+                <label for="dob" class="form-label">Dietary Fiber</label>
+                <input type="text" class="form-control" id="dob" name="dietary_fiber" [(ngModel)]="nutritional.dietary_fiber">
+              </div>
+              <div class="col-md-6">
+                <label for="dob" class="form-label">Sugar</label>
+                <input type="text" class="form-control" id="dob" name="sugar" [(ngModel)]="nutritional.sugar">
+              </div>
+                <div class="col-md-6">
+                    <label for="dob" class="form-label">Protein</label>
+                    <input type="text" class="form-control" id="dob" name="protein" [(ngModel)]="nutritional.protein">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="dob" class="form-label">Potassium</label>
+                    <input type="text" class="form-control" id="dob" name="potassium" [(ngModel)]="nutritional.potassium">
+                  </div>
+              
+
+              <div class="container text-center col-md-12">
+                  <br>
+               
+                <button type="submit" class="btn btn-outline-primary">Add</button>
+              </div>
+           
+          </form>
+    </div>
+</div>

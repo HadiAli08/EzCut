@@ -1,0 +1,23 @@
+User Stories
+
+As a visitor, not logged in,
+
+*As an initial visitor, I want to see what the application is about, what it does, and see if I am interested in creating an account to use the application.
+*As a interested user, I want a simple sign up page.
+
+As a logged in user
+
+*As a user, I want be able to add meals and have a over all view of what I am eating.
+*As a user I want to see the macro and micro nutrient totals each day
+*As a user, I want a simple way to see how many calories I have left
+*As a user, I want to be able to change my goals 
+
+
+When I add meals:
+
+*As a user, I want to be able to add ingrediants in name and quantity
+*As a user, I want to be able to specify what meal it is for
+
+As an admin:
+
+*As an admin, I want to be able to delete users

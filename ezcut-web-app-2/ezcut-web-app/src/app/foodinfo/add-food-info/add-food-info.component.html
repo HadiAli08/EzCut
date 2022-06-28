@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <br>
+    <br>
+    <form (ngSubmit)="AddFoodInfo()">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Name</label>
+          <input type="text" class="form-control" name="name" id="exampleInputEmail1" [(ngModel)]="foodInfo.name">
+          
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Serving Unit</label>
+          <input type="text" class="form-control" name="serrving_unit" id="exampleInputPassword1" [(ngModel)]="foodInfo.serving_Unit">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Serving Quantity</label>
+            <input type="text" class="form-control" name="serrving_quantity" id="exampleInputPassword1" [(ngModel)]="foodInfo.serving_Quantity">
+          </div>
+          <div class="container text-center">
+        <button type="submit" class="btn btn-primary">Add</button>
+    </div>  
+    </form>
+</div>

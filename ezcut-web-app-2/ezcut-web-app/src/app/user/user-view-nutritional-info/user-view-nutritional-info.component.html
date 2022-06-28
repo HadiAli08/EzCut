@@ -1,0 +1,46 @@
+<app-user-navbar></app-user-navbar>
+<br>
+<br>
+<div class="container">
+    <button type="button" class="btn btn-outline-primary" routerLink="/user/add-nutritional-info">Add</button>
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Serving Quantity</th>
+            <th scope="col">Serving Unit</th>
+            <th scope="col">Serving Weight</th>
+            <th scope="col">Calories</th>
+            <th scope="col">Total Fat</th>
+            <th scope="col">Sodium</th>
+            <th scope="col">Total Carbs</th>
+            <th scope="col">Dietary Fiber</th>
+            <th scope="col">Sugar</th>
+            <th scope="col">Protein</th>
+            <th scope="col">Potassium</th>
+            <!-- <th scope="col">Actions</th> -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let u of nutritional;let i = index">
+            <th scope="row">{{i + 1}}</th>
+            <td>{{u.name}}</td>
+            <td>{{u.serving_quantity}}</td>
+            <td>{{u.serving_unit}}</td>
+            <td>{{u.serving_weight}}</td>
+            <td>{{u.calories}}</td>
+            <td>{{u.total_fat}}</td>
+            <td>{{u.sodium}}</td>
+            <td>{{u.total_carbs}}</td>
+            <td>{{u.dietary_fiber}}</td>
+            <td>{{u.sugar}}</td>
+            <td>{{u.protein}}</td>
+            <td>{{u.potassium}}</td>
+            <!-- <td><button type="button" class="btn btn-outline-danger">Delete</button> &nbsp; <button type="button" class="btn btn-outline-warning">Edit</button></td> -->
+          </tr>
+          
+        </tbody>
+      </table>
+</div>

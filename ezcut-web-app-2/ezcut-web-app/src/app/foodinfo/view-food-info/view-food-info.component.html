@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+<br>
+<br>
+<div class="container">
+  <div class="search-container inner-addon right-addon my-3">
+    <a target="_blank" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+    <input id="search-input" type="text" class="form-control  py-2" placeholder="Search through title" 
+    [(ngModel)]="content" (ngModelChange)="Search()" />
+  </div>
+    <button type="button" class="btn btn-outline-primary" routerLink="/add-food-info">Add</button>
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Serving Unit</th>
+            <th scope="col">Serving Quantity</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let u of foodInfo;let i = index">
+            <th scope="row">{{i + 1}}</th>
+            <td>{{u.name}}</td>
+            <td>{{u.serving_Unit}}</td>
+            <td>{{u.serving_Quantity}}</td>
+            <td><button type="button" class="btn btn-outline-danger" (click)="onDeleteFoodInfo(u)">Delete</button></td>
+          </tr>
+          
+        </tbody>
+      </table>
+</div>

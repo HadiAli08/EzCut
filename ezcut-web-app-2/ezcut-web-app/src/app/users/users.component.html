@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+<br>
+<br>
+<div class="container">
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">User Name</th>
+            <th scope="col">Role</th>
+            <th scope="col">Date Of Birth</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let u of user;let i = index">
+            <th scope="row">{{i + 1}}</th>
+            <td>{{u.user_Name}}</td>
+            <td>{{u.role.role_Name}}</td>
+            <td>{{u.dob}}</td>
+            <td><button type="button" class="btn btn-outline-danger" (click)="onDeleteUser(u)">Delete</button> &nbsp; <button type="button" [routerLink]="'/edit-user/'+u.user_Id" class="btn btn-outline-warning">Edit</button></td>
+          </tr>
+          
+        </tbody>
+      </table>
+</div>

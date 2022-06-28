@@ -1,0 +1,87 @@
+<app-navbar></app-navbar>
+<br>
+<div class="container" *ngIf="nutritional">
+    <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Calories</h5>
+              <p class="card-text">{{nutritional.calories === undefined ? 'N/A' : nutritional.calories}}</p>
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Sugars</h5>
+              <p class="card-text">{{nutritional.sugar}}</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Fat</h5>
+              <p class="card-text">{{nutritional.total_fat}}</p>
+         
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Sodium</h5>
+              <p class="card-text">{{nutritional.sodium}}</p>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Fiber</h5>
+              <p class="card-text">{{nutritional.dietary_fiber}}</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Protein</h5>
+              <p class="card-text">{{nutritional.protein}}</p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Potassium</h5>
+              <p class="card-text">{{nutritional.potassium}}</p>
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Carbs</h5>
+              <p class="card-text">{{nutritional.total_carbs}}</p>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
